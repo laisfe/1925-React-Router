@@ -15,7 +15,7 @@ const ListaPost = ({ url }) => {
         posts.map((post) => (
           <Link className={`cartao-post cartao-post--${post.categoria}`}
             key={post.id}
-            to="#"
+            to={`/posts/${post.id}`}
           >
             <article>
               <h3 className="cartao-post__titulo">{post.title}</h3>
